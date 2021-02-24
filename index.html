@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body style="background: white;">
+    <h1>Hello World!</h1>
+    <p>
+        We are using node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.
+    </p>
+    
+    
+	<div id="btn" style="position: absolute; left: 20px; bottom: 20px; display: inline-block; padding: 10px;">팝업 오픈</div>
+  
+<script type="text/javascript">
+var btn = document.querySelector("#btn");
+btn.addEventListener("click", function(){
+	
+	const modal = window.open('', 'modal')
+	
+});
+</script>  
+</body>
+</html>
